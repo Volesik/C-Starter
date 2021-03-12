@@ -1,0 +1,24 @@
+﻿<Window x:Class="TextBox_Example.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:TextBox_Example"
+        mc:Ignorable="d"
+        Title="Viktor Kyselov@Copy Button" Height="370" Width="300">
+    <Grid>
+        <Grid.Background>
+            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                <GradientStop Color="#FFE0C3FC" Offset="1"/>
+                <GradientStop Color="#FF8EC5FC" Offset="0"/>
+            </LinearGradientBrush>
+        </Grid.Background>
+        <TextBox HorizontalAlignment="Center" Name="textBox1" Margin="0,68,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="227" Height="36" BorderBrush="#FF23384A" Background="WhiteSmoke"/>
+        <TextBox HorizontalAlignment="Center" Name="textBox2" Margin="0,154,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="228" Height="36" BorderBrush="#FF23384A" Background="WhiteSmoke"/>
+        <Label Content="2021@Viktor Kyselov" HorizontalAlignment="Center" Margin="0,306,0,0" VerticalAlignment="Top" FontSize="10" FontFamily="Segoe UI Light"/>
+        <Button Content="Copy 1st Box" HorizontalAlignment="Center" Margin="0,247,0,0" VerticalAlignment="Top" Height="38" Width="123" Click="Button_Click" FontStyle="Normal" FontWeight="Bold" Background="{x:Null}" Foreground="#FF23384A" BorderBrush="#FF23384A" BorderThickness="1,1,1,3"/>
+        <Label Content="Enter text below:" HorizontalAlignment="Left" Margin="36,33,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="14" Foreground="#FF23384A" BorderBrush="#FF23384A" BorderThickness="0,0,0,1"/>
+        <Label Content="Result:" HorizontalAlignment="Left" Margin="36,119,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="14" Foreground="#FF23384A" BorderThickness="0,0,0,1" BorderBrush="#FF23384A" RenderTransformOrigin="0.487,0.887"/>
+
+    </Grid>
+</Window>
